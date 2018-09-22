@@ -9,12 +9,14 @@ Usage:
 
 - define a custom command in your ``User.sublime-commands``:
 
-  [
-    {
-      "caption": "custom: set git commit date",
-      "command": "custom_code",
-      "args": {
-        "code": "import os\nos.environ.update(dict(GIT_COMMITTER_DATE='{{DATE}}', GIT_AUTHOR_DATE='{{DATE}}'))",
+.. code-block:: javascript
+
+    [
+      {
+        "caption": "custom: set git commit date",
+        "command": "custom_code",
+        "args": {
+          "code": "import os\nos.environ.update(dict(GIT_COMMITTER_DATE='{{DATE}}', GIT_AUTHOR_DATE='{{DATE}}'))",
+        }
       }
-    }
-  ]
+    ]
